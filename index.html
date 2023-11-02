@@ -9,6 +9,24 @@
 </head>
 <body>
     <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Lista di indirizzi mail</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ol class="mail-list">
+                        <li class="list-item" 
+                        v-for="n in 10"
+                        >
+                        {{ indirizzo }}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./js/app.js"></script>
 </body>
