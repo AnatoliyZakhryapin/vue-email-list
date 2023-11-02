@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 0 10px;
+}
+
+#app {
+    padding: 50px 0px;
+}
+
+h1 {
+    margin-bottom: 50px;
+} 
+
+#myProgress {
+    width: 100%;
+    background-color: rgb(196, 196, 196);
+    position: relative;
+    text-align: center;
+}
+
+#myBar {
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: rgb(255, 255, 255);
+}
+

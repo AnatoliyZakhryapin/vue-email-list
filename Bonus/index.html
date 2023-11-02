@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,13 +18,21 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <ol class="mail-list" v-if="lenghtMailList === 10">
+                    <ol class="mail-list" v-if="lenghtMailList === numberOfList">
                         <li class="list-item" 
                         v-for="mail in mailList"
                         >
                         {{ mail }}
                         </li>
                     </ol>
+                    <div v-else id="myProgress">
+                        <div 
+                            id="myBar"
+                            v-bind:style="{ width: withProgress }"
+                            >
+                            {{ dowlandProgress + "%"}}
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
